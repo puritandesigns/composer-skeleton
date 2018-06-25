@@ -1,0 +1,30 @@
+{
+    "name": "vendor/package-name",
+    "description": "Describe the package here",
+    "type": "library",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "license": "unlicensed",
+    "authors": [
+        {
+            "name": "Michael Kelly",
+            "email": "puritandesigns@gmail.com"
+        }
+    ],
+    "require": {
+        "roave/security-advisories": "dev-master"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Namespace\\": "src/Namespace/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/Tests/"
+        }
+    }
+}
